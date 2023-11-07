@@ -15,18 +15,21 @@
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email">
+            <span th:text="${emailError}" class="text-danger"></span>
         </div>
 
         <!-- Password input -->
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password">
+            <span th:text="${passwordError}" class="text-danger"></span>
         </div>
 
         <!-- Password confirmation input -->
         <div class="mb-3">
             <label for="password_confirmation" class="form-label">Confirm Password</label>
             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
+            <span th:text="${passwordError}" class="text-danger"></span>
         </div>
 
         <!-- First name input -->
@@ -39,12 +42,14 @@
         <div class="mb-3">
             <label for="last_name" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="last_name" name="last_name">
+            <span th:text="${lastNameError}" class="text-danger"></span>
         </div>
 
         <!-- Terms and Conditions checkbox -->
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="terms_and_conditions" name="terms_and_conditions">
             <label class="form-check-label" for="terms_and_conditions">Accept Terms and Conditions</label>
+            <span th:text="${termsAndConditionsError}" class="text-danger"></span>
         </div>
 
         <button type="submit" class="btn btn-primary">Register</button>
