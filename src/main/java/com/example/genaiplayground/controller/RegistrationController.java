@@ -26,4 +26,10 @@ public class RegistrationController {
         return "index";
     }
 
+//    @GetMapping("/users")
+//    @ResponseBody
+//    public List<AuthUser> getAllUsers() {
+//        return authUserRepository.findAll();
+//    }
+
 }
